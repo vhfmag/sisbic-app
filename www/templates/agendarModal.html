@@ -1,0 +1,18 @@
+<ion-modal-view>
+  <ion-header-bar>
+    <h1 class="title">Agendar</h1>
+  </ion-header-bar>
+  <ion-content>
+    <ionic-datepicker date="currentDate" min="minDate" max="maxDate" callback="datePickerCallback">
+      <button class="button button-outline button-block button-positive"> {{ currentDate | date:'dd/MM/yyyy' }} </button>
+    </ionic-datepicker>
+
+    <ionic-timepicker input-obj="timePickerObject">
+      <button class="button button-outline button-block button-positive overflowShow">
+        {{epochString(timePickerObject.inputEpochTime)}}
+      </button>
+    </ionic-timepicker>
+
+    <button class='button button-full button-positive' ng-click='closeModal()'>Agendar</button>
+  </ion-content>
+</ion-modal-view>

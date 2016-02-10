@@ -1,0 +1,12 @@
+{
+  "name": "HelloIonic",
+  "private": "true",
+  "devDependencies": {
+    "ionic": "driftyco/ionic-bower#1.2.4",
+    "jQuery": "~2.2.0",
+    "datepicker-for-ionic": "~1.1.7"
+  },
+  "dependencies": {
+    "ionic-timepicker": "~0.4.0"
+  }
+}

@@ -1,0 +1,23 @@
+<ion-view title="Últimas">
+  <ion-nav-buttons side='secondary'>
+    <!-- <button class='button icon ion-refresh' ng-click='update()'></button> -->
+  </ion-nav-buttons>
+
+  <ion-content scroll="true" padding="true" class="has-header">
+    <div class='list card' ng-repeat='data in sisbicData' ng-show='sisbicData'>
+      <div class='item item-divider single-line'>
+        <h2 style='margin-bottom: auto; margin-top: auto; margin-right: auto;'>{{data.date}}</h2>
+        <!-- botões pra star & schedule -->
+        <span class='buttons' style='float: right;'>
+          <button class='button icon button-icon button-clear' ng-click='data.starred = !data.starred' ng-class="data.starred ? 'ion-android-star button-energized' : 'ion-android-star-outline'"></button>
+          <button class='button icon button-icon button-clear ion-android-alarm-clock' ng-class="{'button-royal': data.scheduled}" ng-click='openModal()'></button>
+        </span>
+      </div>
+      <div class='item item-body htmlContent'><div ng-bind-html='data.news'></div></div>
+    </div>
+
+    <div ng-hide='sisbicData' class='screen-center'>
+      <ion-spinner icon='lines' class="spinner-energized"></ion-spinner>
+    </div>
+  </ion-content>
+</ion-view>

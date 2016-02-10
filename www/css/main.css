@@ -1,0 +1,15 @@
+.screen-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.spinner svg {
+  width: 60px;
+  height: 60px;
+}
+
+.single-line {
+  display: flex;
+  align-items: center;
+}

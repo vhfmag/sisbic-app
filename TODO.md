@@ -1,0 +1,11 @@
+- Tornar o modal funcional (colocar datetime em data.scheduled)
+- Make ReadMoreJs more reliabe (sometimes it doesn't show up after changing tabs)
+- Implement searching
+- Implement keyword-notifying
+- Implement news-notifying
+
+- Make pull requests to ionic-timepicker because:
+  - You chained increaseMinutes and increaseHours
+  - You chained decreaseMinutes and decreaseHours
+  - Standard blablabla doesn't work
+  - When 'Set', etime didn't update the inputObj, the one directly accesible via bindings [fixed]
