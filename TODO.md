@@ -3,6 +3,7 @@
 - Implement searching
 - Implement keyword-notifying
 - Implement news-notifying
+- Far future: include SIPAC
 
 - Make pull requests to ionic-timepicker because:
   - You chained increaseMinutes and increaseHours
